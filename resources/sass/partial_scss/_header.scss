@@ -23,5 +23,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    position: relative;
 
+    .currentSeries {
+        position: absolute;
+        padding: 10px 40px;
+        bottom: -14px;
+        left: 8%;
+        
+        background-color: rgb(2, 130, 249);
+    
+        a{
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bolder;
+    
+        }
+      }
 }

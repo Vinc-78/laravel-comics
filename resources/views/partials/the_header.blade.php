@@ -82,6 +82,9 @@ $nav_links = [
   </nav>
 
   <div class="container-fluid hero">
+    <div class="currentSeries">
+      <a href="#">CURRENT SERIES</a>
+    </div>
     
   </div>
 </header>

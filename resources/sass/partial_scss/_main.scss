@@ -1,5 +1,41 @@
 .main-centrale {
-    min-height: 300px;
+    min-height: 700px;
     width: 100%;
     background-color:rgb(28, 28, 28); 
+}
+
+.card-fumetto {
+
+    img { height: 180px;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+}
+
+.card {
+    background-color:rgb(28, 28, 28); 
+}
+
+.central-main{
+    position: relative;
+
+    .loadMore{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        bottom: -5%;
+        text-align: center;
+        padding: 10px 20px;
+        width: 20%;
+        background-color: rgb(2, 130, 249);
+    
+        a{
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bolder;
+    
+        }
+      }
 }

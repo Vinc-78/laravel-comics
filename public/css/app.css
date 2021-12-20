@@ -23,11 +23,61 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  position: relative;
+}
+
+.hero .currentSeries {
+  position: absolute;
+  padding: 10px 40px;
+  bottom: -14px;
+  left: 8%;
+  background-color: #0282f9;
+}
+
+.hero .currentSeries a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .main-centrale {
-  min-height: 300px;
+  min-height: 700px;
   width: 100%;
   background-color: #1c1c1c;
+}
+
+.card-fumetto img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.card {
+  background-color: #1c1c1c;
+}
+
+.central-main {
+  position: relative;
+}
+
+.central-main .loadMore {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5%;
+  text-align: center;
+  padding: 10px 20px;
+  width: 20%;
+  background-color: #0282f9;
+}
+
+.central-main .loadMore a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
 }
 

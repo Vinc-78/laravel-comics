@@ -22,7 +22,9 @@ Route::get('/', function () {
 
     $fumetti = config("db_comics");
 
-    return view("home.comics", $fumetti);
+    /* per passarlo sotto forma di variabile creo la chiave "lista_fumetti */
+
+    return view("home.comics", ["lista_fumetti" => $fumetti]);
   })->name("home.comics");
 
 

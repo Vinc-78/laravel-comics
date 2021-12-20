@@ -8,24 +8,27 @@
 
    <div class="content-fluid main-centrale">
 
-    <div class="container">
+
+     <div class="container central-main">
       
-        @foreach($fumetti as $value)
-
-            <div class="row row-cols-1 row-cols-md-6 g-4">
-                @foreach($value as $fumetto)
+            <div class="row row-cols-1 row-cols-md-6 g-4 py-4" >
+                @foreach($lista_fumetti as $item)
                     <div class="col">
-                        <div class="card card-pasta">
-                        <img src="{{ $fumetto['thumb'] }}" class="card-img-top" alt="...">
+                        <div class="card card-fumetto">
+                            <img src="{{ $item['thumb'] }}"  alt="...">
 
-                        <div class="card-img-title">{{  $fumetto['title'] }}</div>
+                            <div class="card-img-title pt-3 text-white">{{  $item['title'] }}</div>
                         </div>
                     </div>
                 @endforeach
-            </div>
-        @endforeach
-    
-   </div>
+
+                </div>
+
+                <div class="loadMore">
+                    <a href="#">LOAD MORE</a>
+                </div>
+          
+    </div> 
 </div>
 
 @endsection

@@ -7,6 +7,7 @@
   <title>@yield('page_title')</title>
 
   @include("partials.bootstrap_header")
+  
 </head>
 <body>
   @include("partials.the_header")
