@@ -12,14 +12,9 @@
   @include("partials.the_header")
 
   <main>
-    <div class="d-flex">
-      <div>
-       
-
-      </div>
-
-      @yield('content')
-    </div>
+   
+       @yield('content')  {{-- Si inserisce il contenuto specifico del main  --}}
+    
   </main>
 
   @include("partials.the_footer")

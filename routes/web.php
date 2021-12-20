@@ -19,8 +19,13 @@ Route::get('/', function () {
 
 
   Route::get('/comics', function () {
-    return view("home.comics");
+
+    $fumetti = config("db_comics");
+
+    return view("home.comics", $fumetti);
   })->name("home.comics");
+
+
   
   Route::get('/movies', function () {
     return view("home.movies");
