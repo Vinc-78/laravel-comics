@@ -3,3 +3,25 @@
   background-color: #0282f9;
 }
 
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-nav a {
+  font-size: 12px;
+}
+
+.navbar {
+  height: 90px;
+}
+
+.hero {
+  height: 300px;
+  width: 100%;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+

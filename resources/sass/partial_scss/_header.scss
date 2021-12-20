@@ -1,0 +1,27 @@
+.blu_line {
+    height:30px;
+    background-color: rgb(2, 130, 249);
+}
+
+.top-nav {
+    display:flex;
+    justify-content: flex-end;
+
+    a {
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    height: 90px;
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    background-image: url("/img/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}

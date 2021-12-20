@@ -45,20 +45,43 @@ $nav_links = [
 @endphp
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container-fluid">
-    
+
+  <div class="container-fluid blu_line">
+
+    <div class="container top-nav">
+
+        <a class="nav-link text-white  " href="#">DC POWER <sup>SM</sup> VISA <i class="far fa-registered"></i> </a>
+        <a class="nav-link text-white  " href="#">ADDICIONAL DC SITES</a>
+     
+    </div>
+
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom justify-content-center">
+   
         <div class="container">
 
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <div class="logo">
+            <img class="w-75" src="{{ asset('img/dc-logo.png') }}" alt="">
+          </div>
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ;">
                 @foreach($nav_links as $value)
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route($value['route_name']) }}">{{ $value['text'] }}</a>
+                    <a class="nav-link fw-bold" href="{{ route($value['route_name']) }}">{{ $value['text'] }}</a>
                 </li>
                 @endforeach
             </ul>
+
+            <div class="search">
+              <input type="search" placeholder="Search"><i class="fas fa-search"></i>
+            </div>
         </div>
 
-    </div>
+    
   </nav>
+
+  <div class="container-fluid hero">
+    
+  </div>
 </header>
