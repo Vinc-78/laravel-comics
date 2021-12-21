@@ -81,3 +81,107 @@
   font-weight: bolder;
 }
 
+.shellFooter {
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.centralFooter {
+  padding: 10px;
+  width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.centralFooter h2 {
+  font-size: 16px;
+  margin: 25px -8px;
+}
+
+.centralFooter h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.centralFooter .centralFooter-left-list-central {
+  margin: 0px 15px;
+}
+
+.centralFooter ul {
+  margin-left: -40px;
+}
+
+.centralFooter li {
+  list-style: none;
+}
+
+.centralFooter li a {
+  text-decoration: none;
+  color: #959587;
+  font-size: 12px;
+}
+
+.centralFooter-left {
+  display: flex;
+}
+
+.centralFooter-right {
+  z-index: 1;
+  position: absolute;
+  right: -20px;
+  top: -50px;
+}
+
+.centralFooter-right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.navSocial {
+  position: relative;
+  z-index: 100;
+  background-color: #303030;
+}
+
+.navSocialContainer {
+  padding: 20px;
+  width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navSocialContainer .navSocial-left {
+  border: 1px solid #0282f9;
+  padding: 10px;
+}
+
+.navSocialContainer .navSocial-left a {
+  text-decoration: none;
+  color: white;
+}
+
+.navSocialContainer .navSocial-right {
+  padding: 10px;
+  color: #0282f9;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navSocialContainer .navSocial-right ul {
+  display: inline-block;
+}
+
+.navSocialContainer .navSocial-right ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
