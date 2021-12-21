@@ -8,13 +8,54 @@
     position: relative;
     .vetrina {
         position: absolute;
-        top:-200px;
+        top:-220px;
         left:0;
         z-index: 30;
         
         img {
             border:1px solid white;
+            
         }
+
+        .go-galleria {
+            background-color: rgb(2, 130, 249);
+            width: 75%;
+            text-align: center;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            
+        }
+
 
     }
 }
+
+.sezione-dettagli {
+    border-top: 1px solid grey;
+    min-height: 120px;
+    background-color: rgb(246, 246, 246);
+    z-index: 120;
+}
+
+.artists, .dettagli {
+    width: 75%;
+    margin-left: 20px;
+    min-height: 90px;
+    color: rgb(2, 130, 249);
+    font-weight: bold;
+}
+
+.title{
+    width: 25%;
+    
+}
+
+.dettagli {
+    height: 40px;
+}
+
+
