@@ -2,6 +2,25 @@
     min-height: 700px;
     width: 100%;
     background-color:rgb(28, 28, 28); 
+    position: relative;
+
+    .currentSeries {
+        position: absolute;
+        padding: 10px 40px;
+        top: -3%;
+        left: 8%;
+        z-index: 30;
+        
+        background-color: rgb(2, 130, 249);
+    
+        a{
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bolder;
+    
+        }
+      }
 }
 
 .card-fumetto {
@@ -15,6 +34,7 @@
 
 .card {
     background-color:rgb(28, 28, 28); 
+    border:0px
 }
 
 .central-main{
@@ -39,3 +59,47 @@
         }
       }
 }
+
+.containerBlu {
+    width: 980px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  
+    .img {
+      width: 65px;
+      margin-left: 5px;
+      display: inline-block;
+      vertical-align: middle;
+  
+      img {
+          object-fit: contain;
+          height: 40px;
+          width: 40px;
+          }
+    }
+  
+    ul {
+      list-style: none;
+  
+      li {
+        display: inline-block;
+      }
+      a {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        padding-right: 5px;
+      }
+    }
+  }
+  .navBlu {
+    text-align: center;
+  }
+  
+  .shellBlu {
+    background-color: rgb(2, 130, 249);
+  }

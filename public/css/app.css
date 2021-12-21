@@ -24,27 +24,46 @@
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
-}
+  z-index: 25;
+  /*  .currentSeries {
+       position: absolute;
+       padding: 10px 40px;
+       bottom: -14px;
+       left: 8%;
 
-.hero .currentSeries {
-  position: absolute;
-  padding: 10px 40px;
-  bottom: -14px;
-  left: 8%;
-  background-color: #0282f9;
-}
+       background-color: rgb(2, 130, 249);
 
-.hero .currentSeries a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bolder;
+       a{
+         color: white;
+         text-decoration: none;
+         font-size: 18px;
+         font-weight: bolder;
+
+       }
+     } */
 }
 
 .main-centrale {
   min-height: 700px;
   width: 100%;
   background-color: #1c1c1c;
+  position: relative;
+}
+
+.main-centrale .currentSeries {
+  position: absolute;
+  padding: 10px 40px;
+  top: -3%;
+  left: 8%;
+  z-index: 30;
+  background-color: #0282f9;
+}
+
+.main-centrale .currentSeries a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .card-fumetto img {
@@ -57,6 +76,7 @@
 
 .card {
   background-color: #1c1c1c;
+  border: 0px;
 }
 
 .central-main {
@@ -79,6 +99,53 @@
   text-decoration: none;
   font-size: 18px;
   font-weight: bolder;
+}
+
+.containerBlu {
+  width: 980px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.containerBlu .img {
+  width: 65px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.containerBlu .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40px;
+  width: 40px;
+}
+
+.containerBlu ul {
+  list-style: none;
+}
+
+.containerBlu ul li {
+  display: inline-block;
+}
+
+.containerBlu ul a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+.navBlu {
+  text-align: center;
+}
+
+.shellBlu {
+  background-color: #0282f9;
 }
 
 .shellFooter {

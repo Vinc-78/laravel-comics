@@ -24,8 +24,9 @@
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
+    z-index: 25;
 
-    .currentSeries {
+   /*  .currentSeries {
         position: absolute;
         padding: 10px 40px;
         bottom: -14px;
@@ -40,5 +41,5 @@
           font-weight: bolder;
     
         }
-      }
+      } */
 }
