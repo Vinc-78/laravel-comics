@@ -16,6 +16,21 @@
   height: 90px;
 }
 
+.nav-item a:hover {
+  color: #0282f9 !important;
+  position: relative;
+}
+
+.nav-item a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 8px;
+  width: 40px;
+  height: 5px;
+  background-color: #0282f9;
+}
+
 .hero {
   height: 300px;
   width: 100%;
