@@ -58,6 +58,12 @@
      } */
 }
 
+.active {
+  background-color: #0282f9;
+  color: white;
+  border-radius: 50%;
+}
+
 .main-centrale {
   min-height: 700px;
   width: 100%;
@@ -161,6 +167,10 @@
 
 .shellBlu {
   background-color: #0282f9;
+}
+
+.fumetto-singolo a {
+  text-decoration: none;
 }
 
 .shellFooter {

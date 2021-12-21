@@ -9,6 +9,8 @@
 
   @include("partials.bootstrap_header")
 
+  @yield('font_awesome')
+
 </head>
 <body>
   @include("partials.the_header")

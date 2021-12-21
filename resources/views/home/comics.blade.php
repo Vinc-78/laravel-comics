@@ -3,6 +3,12 @@
 
 @section("page_title", "DC Comics")
 
+@section("font_awesome")
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+@endsection
 
 @section("content")
 
@@ -18,13 +24,15 @@
         
                 <div class="row row-cols-1 row-cols-md-6 g-4 py-4" >
                     @foreach($lista_fumetti as $item)
-                        <div class="col">
-                            <div class="card card-fumetto">
+                        <div class="col fumetto-singolo">
+                            
+                            <a href="{{route('fumetti.dettaglio',["id"=>$loop->index])}}" class="card card-fumetto">
                                 <img src="{{ $item['thumb'] }}"  alt="...">
 
                                 <div class="card-img-title pt-3 text-white">{{  $item['title'] }}</div>
-                            </div>
+                            </a>
                         </div>
+
                     @endforeach
 
                     </div>

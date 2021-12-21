@@ -40,9 +40,13 @@ $nav_links = [
     "route_name"=> "home.shop"
   ],
 
-  
-]
+];
+
+$routeLink = Request::route()->getName();
+
 @endphp
+
+
 
 <header>
 
@@ -68,7 +72,7 @@ $nav_links = [
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ;">
                 @foreach($nav_links as $value)
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="{{ route($value['route_name']) }}">{{ $value['text'] }}</a>
+                    <a class="nav-link fw-bold {{ $routeLink === $value['route_name'] ? 'active' : ' ' }}" href="{{ route($value['route_name']) }}">{{ $value['text'] }}</a>
                 </li>
                 @endforeach
             </ul>

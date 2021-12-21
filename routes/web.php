@@ -27,6 +27,26 @@ Route::get('/', function () {
     return view("home.comics", ["lista_fumetti" => $fumetti]);
   })->name("home.comics");
 
+/* inserito parametro url per i singoli fumetti*/
+
+  Route::get('/comics/{id?}', function ($id) {
+
+    $fumetti =config("db_comics");
+
+    if(is_numeric($id) && $id>=0 && $id<count($fumetti)){
+
+      $fumetto =$fumetti[$id];
+
+      /* dump($fumetto); */
+
+      return view("fumetti.dettaglio", [
+        "fumetto_singolo"=>$fumetto
+      ]);
+    } else 
+       abort(404); 
+  })->name("fumetti.dettaglio");
+
+
 
   
   Route::get('/movies', function () {
