@@ -277,3 +277,24 @@
   padding: 0 10px;
 }
 
+.green {
+  background-color: seagreen;
+  color: white;
+  padding: 15px 10px;
+}
+
+.page {
+  position: relative;
+}
+
+.page .vetrina {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  z-index: 30;
+}
+
+.page .vetrina img {
+  border: 1px solid white;
+}
+
