@@ -75,7 +75,7 @@
                     <div class="artists">
 
                         @foreach ($fumetto_singolo['artists'] as $item)
-                            <span>U.S: Price: {{$item}} </span>
+                            <span> {{$item}} </span>
                         @endforeach
                         
                     </div>
@@ -91,7 +91,7 @@
                     <div class="artists">
 
                         @foreach ($fumetto_singolo['writers'] as $item)
-                            <span>U.S: Price: {{$item}} </span>
+                            <span> {{$item}} </span>
                         @endforeach
                         
                     </div>
@@ -103,7 +103,7 @@
             <div class="col-6">
                 <h4 class="text-secondary border-bottom py-4 mb-2">Species</h4>
 
-                <div class="art border-bottom d-flex mb-2">
+                <div class="art border-bottom d-flex mb-1">
 
                     <div class="title">
                         <span>Series</span>
@@ -117,7 +117,7 @@
 
                 </div>
 
-                <div class="art border-bottom d-flex mb-2">
+                <div class="art border-bottom d-flex mb-1">
 
                     <div class="title">
                         <span>US Price:</span>
@@ -130,7 +130,7 @@
                     </div>
 
                 </div>
-                <div class="art border-bottom d-flex mb-2">
+                <div class="art border-bottom d-flex mb-1">
 
                     <div class="title">
                         <span>On Sale Date:</span>
